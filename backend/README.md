@@ -1,2 +1,9 @@
-# SafeGen
-SafeGen is a hybrid AI-powered prompt linter designed to improve the security of code generation prompts by detecting sensitive data, identifying security risks, and suggesting safer prompt alternatives.
+# SafeGen Backend
+
+FastAPI service responsible for:
+
+- local sanitization via Ollama + `phi3:mini`;
+- external semantic analysis via Gemini;
+- exposing the HTTP endpoints for the hybrid flow.
+
+Recommended execution path: run it through the Docker stack at the repository root.
