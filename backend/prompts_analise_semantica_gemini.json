@@ -1,5 +1,5 @@
 {
-  "descricao": "Conjunto de prompts de teste para validacao do linter de prompts (codigo seguro x inseguro). IDs com INS indicam I, IDs com SEG indicam SEGURO",
+  "descricao": "Conjunto de prompts de teste para validacao do linter de prompts (codigo seguro x inseguro). IDs com INS indicam INSEGURO, IDs com SEG indicam SEGURO",
   "total_prompts": 60,
   "prompts_inseguros": [
     {
