@@ -8,23 +8,44 @@ Serviço FastAPI responsável por:
 
 Caminho de execução recomendado: rodar através da stack Docker na raiz do repositório.
 
-## Avaliador do analisador semântico (Gemini)
+## Avaliação dos analisadores
 
-Mede a qualidade da etapa de análise semântica, comparando a saída do Gemini com um dataset rotulado de prompts seguros/inseguros. Calcula precisão, recall, F1-score, taxa de falsos positivos e taxa de falsos negativos.
+O avaliador foi separado entre `semantic_analysis` e `local_analysis`.
 
-Pré-requisitos: Ollama rodando localmente com o modelo `phi3:mini` baixado, e a variável `GEMINI_API_KEY` configurada no `.env`.
+### `semantic_analysis`
+
+Mede a qualidade da etapa semântica comparando o campo `security_risk` retornado pelo Gemini com o valor de referência do arquivo `prompts_analise_semantica_gemini.json`. Nesta avaliação, cada item usa diretamente o seu `prompt` original.
+
+Pré-requisitos: variáveis `GEMINI_API_KEY1` até `GEMINI_API_KEY6` configuradas no `.env` conforme disponibilidade das chaves.
 
 Executar a partir da pasta `backend/`:
 
-```
-python avaliar_analisadores.py --dataset prompts_analise_semantica_gemini.json
+```bash
+python avaliar_analisadores.py semantic_analysis
 ```
 
 Parâmetros opcionais:
 
-- `--output-dir` — pasta onde salvar os relatórios (padrão: `./resultados`)
-- `--delay` — espera entre chamadas, em segundos, para respeitar limite de taxa da API do Gemini
-- `--limit` — avalia só os N primeiros prompts (útil para testes rápidos)
-- `--no-sanitize` — pula a etapa do Phi-3 e envia o prompt original direto ao Gemini
+- `--dataset` — caminho do dataset JSON (padrão: `prompts_analise_semantica_gemini.json`)
+- `--output-dir` — pasta onde salvar os relatórios (padrão: `./resultados/semantic_analysis`)
+- `--limit` — avalia só os N primeiros prompts
 
-Resultados gerados em `resultados/`: `resultados_detalhados.csv`, `metricas.json`, `falsos_positivos.json`, `falsos_negativos.json` e `erros_tecnicos.json`.
+O cliente do Gemini agora alterna entre `GEMINI_API_KEY1` até `GEMINI_API_KEY6`, respeitando no código o limite de `5 RPM` e `20 RPD` por chave e fazendo retentativa automática em falhas transitórias como `503`.
+
+### `local_analysis`
+
+Mede a qualidade da etapa local comparando o campo `sensitive_data` retornado pelo Phi-3/Ollama com o valor de referência do arquivo `prompts_analise_local_phi3.json`.
+
+Pré-requisitos: Ollama rodando localmente com o modelo `phi3:mini` disponível.
+
+Executar a partir da pasta `backend/`:
+
+```bash
+python avaliar_analisadores.py local_analysis
+```
+
+Parâmetros opcionais:
+
+- `--dataset` — caminho do dataset JSON (padrão: `prompts_analise_local_phi3.json`)
+- `--output-dir` — pasta onde salvar os relatórios (padrão: `./resultados/local_analysis`)
+- `--limit` — avalia só os N primeiros prompts

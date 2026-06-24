@@ -1,5 +1,7 @@
-# Avalia a qualidade dos analisadores do linter (Phi-3 Mini local + Gemini semântico)
-# Uso: python avaliar_analisadores.py --dataset prompts_analise_semantica_gemini.json
+# Avalia a qualidade dos analisadores do SafeGen.
+# Uso:
+#   python avaliar_analisadores.py semantic_analysis
+#   python avaliar_analisadores.py local_analysis
 
 from avaliacao.cli import main
 

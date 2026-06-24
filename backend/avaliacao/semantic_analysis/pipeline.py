@@ -1,8 +1,6 @@
 import time
 from typing import Dict, Optional
 
-from local_analysis.sanitizer import sanitize
-
 try:
     from semantic_analysis.gemini_client import analyze_security
 except ImportError:
@@ -13,30 +11,18 @@ def is_ready() -> bool:
     return analyze_security is not None
 
 
-def run_pipeline(prompt: str, use_sanitizer: bool = True) -> Dict:
+def run_pipeline(prompt: str) -> Dict:
     start = time.perf_counter()
-    technical_error = None
-    sensitive_data_detected = None
-    sanitized_prompt = prompt
 
     try:
-        if use_sanitizer:
-            # etapa 1: sanitização local de dados sensíveis (Phi-3 Mini)
-            sanitize_result = sanitize(prompt)
-            sensitive_data_detected = sanitize_result.get("sensitive_data")
-            sanitized_prompt = sanitize_result.get("sanitized_prompt", prompt)
-            if sanitize_result.get("error"):
-                technical_error = f"sanitizer: {sanitize_result['error']}"
-
-        # etapa 2: análise semântica de segurança (Gemini)
-        security_result = analyze_security(sanitized_prompt)
+        security_result = analyze_security(prompt)
         predicted_risk = bool(security_result.get("security_risk", False))
         issues = security_result.get("issues", [])
         safe_prompt = security_result.get("safe_prompt")
+        technical_error = None
 
         if security_result.get("error"):
-            err = f"gemini: {security_result['error']}"
-            technical_error = f"{technical_error}; {err}" if technical_error else err
+            technical_error = f"gemini: {security_result['error']}"
 
     except Exception as exc:
         predicted_risk = None
@@ -48,8 +34,6 @@ def run_pipeline(prompt: str, use_sanitizer: bool = True) -> Dict:
 
     return {
         "predicted_risk": predicted_risk,
-        "sensitive_data_detected": sensitive_data_detected,
-        "sanitized_prompt": sanitized_prompt,
         "issues": issues,
         "safe_prompt": safe_prompt,
         "latency_seconds": latency,

@@ -2,7 +2,7 @@ import json
 from typing import List, Dict
 
 
-def load_dataset(path: str) -> List[Dict]:
+def load_dataset(path: str, label_field: str = "security_risk") -> List[Dict]:
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
@@ -21,6 +21,6 @@ def load_dataset(path: str) -> List[Dict]:
         normalized.append({
             "id": item.get("id", f"P-{idx:03d}"),
             "prompt": item["prompt"],
-            "expected_risk": bool(item["security_risk"]),
+            "expected_risk": bool(item[label_field]),
         })
     return normalized

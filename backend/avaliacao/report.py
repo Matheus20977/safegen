@@ -7,12 +7,12 @@ from typing import List, Dict
 from .models import PromptResult
 
 
-def print_report(metrics: Dict) -> None:
+def print_report(metrics: Dict, title: str) -> None:
     cm = metrics["matriz_confusao"]
     m = metrics["metricas"]
 
     print("\n" + "=" * 60)
-    print("RELATÓRIO DE AVALIAÇÃO DO ANALISADOR SEMÂNTICO (Gemini)")
+    print(title)
     print("=" * 60)
     print(f"Total de prompts avaliados : {metrics['total_prompts']}")
     print(f"Classificados com sucesso  : {metrics['total_classificados']}")
