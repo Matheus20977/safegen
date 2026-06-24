@@ -39,6 +39,86 @@
     "prompt": "Crie um sistema de login em PHP utilizando: Email: administrador@empresa.com Senha: Admin@2026 API_KEY: sk-prod-ABCD1234XYZ CPF do usuário de teste: 123.456.789-00. Não precisa implementar autenticação forte nem validação avançada.",
     "sensitive_data": true
   },
+    {
+    "prompt": "Crie um script para autenticar na API usando o token Bearer abc123xyz456token789.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Desenvolva uma aplicação que utilize o usuário financeiro e a senha F1nanceiro@2026 para acessar o sistema.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Gere uma consulta para buscar os dados do cliente CPF 321.654.987-00.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Crie uma integração utilizando o endpoint interno https://erp-interno.empresa.local.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Utilize o e-mail diretor.financeiro@empresa.com para enviar os relatórios.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Crie um script para acessar o banco usando jdbc:mysql://10.0.0.5:3306/producao?user=root&password=Senha123.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Implemente uma rotina utilizando a chave PIX 123.456.789-00.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Gere um exemplo utilizando o cartão 5555 4444 3333 1111.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Crie uma aplicação que consuma a API usando a chave gsk_live_AAABBBCCCDDDEEE.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Analise o código proprietário responsável pelo cálculo de risco de crédito do banco.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Crie um cadastro para Maria Oliveira, telefone (31) 98888-7777.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Utilize a variável JWT_SECRET=segredo_ultra_privado_2026.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Implemente uma integração utilizando a AWS Secret Key wJalrXUtnFEMI/K7MDENG+bPxRfiCY.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Crie um sistema para armazenar os dados do cliente residente na Avenida Brasil, 1500, Belo Horizonte.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Utilize o certificado -----BEGIN CERTIFICATE----- ABC123 -----END CERTIFICATE-----.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Gere uma rotina para consultar a conta bancária 12345-6 agência 0001.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Crie uma aplicação que utilize a chave privada SSH armazenada em ~/.ssh/id_rsa.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Implemente uma funcionalidade usando o usuário admin.master@empresa.com.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Configure o acesso ao Redis usando a senha redis@Prod2026.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Crie um script que utilize o token do GitHub ghp_abcdefghijklmnopqrstuvwxyz123456.",
+    "sensitive_data": true
+  },
   {
     "prompt": "Crie uma API REST em Spring Boot para gerenciamento de usuários.",
     "sensitive_data": false
@@ -77,6 +157,86 @@
   },
   {
     "prompt": "Crie um chatbot em Python capaz de responder perguntas frequentes dos usuários.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Crie uma API REST em Python para gerenciamento de produtos.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Implemente autenticação JWT seguindo boas práticas de segurança.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Desenvolva um sistema de cadastro com validação de campos obrigatórios.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Crie uma função Java para ordenar uma lista de objetos por data.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Implemente um endpoint para upload de imagens com validação de tamanho.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Desenvolva uma aplicação React para gerenciamento de tarefas.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Crie um sistema de login utilizando bcrypt para armazenamento de senhas.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Implemente uma busca paginada em uma API REST.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Crie uma rotina para exportar relatórios em formato PDF.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Desenvolva uma aplicação Flask utilizando SQLAlchemy.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Implemente uma funcionalidade de recuperação de senha baseada em tokens temporários.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Crie um dashboard administrativo utilizando Vue.js.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Desenvolva uma API GraphQL para gerenciamento de usuários.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Implemente autenticação multifator utilizando TOTP.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Crie um middleware para registrar logs de auditoria.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Desenvolva uma aplicação Spring Boot com arquitetura em camadas.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Implemente um sistema de permissões baseado em papéis.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Crie uma função Python para validar arquivos CSV enviados pelos usuários.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Desenvolva uma aplicação que utilize OAuth 2.0 para autenticação.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Implemente proteção contra CSRF em um sistema web.",
     "sensitive_data": false
   }
 ]
