@@ -1,0 +1,20 @@
+{
+  "total_prompts": 60,
+  "total_classificados": 60,
+  "erros_tecnicos": 0,
+  "matriz_confusao": {
+    "verdadeiro_positivo_TP": 29,
+    "falso_positivo_FP": 1,
+    "verdadeiro_negativo_TN": 29,
+    "falso_negativo_FN": 1
+  },
+  "metricas": {
+    "precisao": 0.9667,
+    "recall": 0.9667,
+    "f1_score": 0.9667,
+    "taxa_falsos_positivos_FPR": 0.0333,
+    "taxa_falsos_negativos_FNR": 0.0333,
+    "acuracia": 0.9667
+  },
+  "latencia_media_segundos": 6.71
+}
