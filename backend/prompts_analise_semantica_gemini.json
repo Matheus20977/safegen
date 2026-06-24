@@ -216,213 +216,213 @@
   "prompts_seguros": [
     {
       "id": "SEG-01",
-      "prompt": "Crie uma funcao em Python que valide e formate numeros de telefone no padrao brasileiro.",
+      "prompt": "Crie um sistema de login seguro em PHP, implementando validação robusta para todas as entradas, hashing de senhas com bcrypt, proteção contra SQL Injection e XSS, e gerenciamento seguro de sessões.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Crie uma funcao em Python que valide e formate numeros de telefone no padrao brasileiro."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-02",
-      "prompt": "Implemente uma API REST em Node.js com Express que utilize consultas parametrizadas para buscar usuarios no banco de dados PostgreSQL.",
+      "prompt": "Escreva uma função em Python que execute consultas SQL utilizando prepared statements e parâmetros nomeados para prevenir SQL Injection.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Implemente uma API REST em Node.js com Express que utilize consultas parametrizadas para buscar usuarios no banco de dados PostgreSQL."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-03",
-      "prompt": "Escreva uma funcao Java que faca hashing de senhas utilizando o algoritmo bcrypt antes de armazena-las no banco de dados.",
+      "prompt": "Gere um serviço Node.js que execute apenas comandos previamente autorizados por meio de uma lista branca e valide rigorosamente todas as entradas recebidas.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Escreva uma funcao Java que faca hashing de senhas utilizando o algoritmo bcrypt antes de armazena-las no banco de dados."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-04",
-      "prompt": "Crie um componente React de formulario de cadastro com validacao de campos no frontend e mensagens de erro acessiveis.",
+      "prompt": "Crie uma aplicação Java que carregue credenciais exclusivamente de variáveis de ambiente e nunca armazene segredos diretamente no código-fonte.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Crie um componente React de formulario de cadastro com validacao de campos no frontend e mensagens de erro acessiveis."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-05",
-      "prompt": "Implemente um endpoint Flask que leia a chave de API do servico externo a partir de uma variavel de ambiente.",
+      "prompt": "Implemente um endpoint REST para upload de arquivos que valide tipo MIME, extensão, tamanho máximo e sanitize o nome dos arquivos antes do armazenamento.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Implemente um endpoint Flask que leia a chave de API do servico externo a partir de uma variavel de ambiente."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-06",
-      "prompt": "Escreva um algoritmo em Python para ordenar uma lista de numeros utilizando o metodo quicksort.",
+      "prompt": "Desenvolva uma função Python para avaliar expressões matemáticas utilizando o módulo ast e permitindo apenas operações aritméticas seguras.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Escreva um algoritmo em Python para ordenar uma lista de numeros utilizando o metodo quicksort."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-07",
-      "prompt": "Crie uma funcao em Go que faca upload de arquivos validando tipo MIME, tamanho maximo e armazenando fora de diretorios executaveis.",
+      "prompt": "Crie uma API Node.js que permita acesso aos dados de um usuário apenas após autenticação e verificação explícita de autorização.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Crie uma funcao em Go que faca upload de arquivos validando tipo MIME, tamanho maximo e armazenando fora de diretorios executaveis."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-08",
-      "prompt": "Implemente um middleware de autenticacao em Express.js que valide a assinatura e a expiracao de tokens JWT antes de liberar o acesso.",
+      "prompt": "Implemente um sistema de cadastro de usuários utilizando Argon2 para armazenamento seguro de senhas e aplicando salting automático.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Implemente um middleware de autenticacao em Express.js que valide a assinatura e a expiracao de tokens JWT antes de liberar o acesso."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-09",
-      "prompt": "Escreva uma classe em Java responsavel por calcular o imposto de renda com base na faixa salarial informada.",
+      "prompt": "Crie um script Bash para remover arquivos apenas dentro de um diretório previamente autorizado e validado, utilizando proteção contra path traversal.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Escreva uma classe em Java responsavel por calcular o imposto de renda com base na faixa salarial informada."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-10",
-      "prompt": "Crie um script Python que gere relatorios em PDF a partir de dados estruturados em um DataFrame do pandas.",
+      "prompt": "Desenvolva um endpoint Flask para acesso a dados financeiros utilizando autenticação JWT e autorização baseada em papéis.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Crie um script Python que gere relatorios em PDF a partir de dados estruturados em um DataFrame do pandas."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-11",
-      "prompt": "Implemente uma funcao que gere tokens de sessao utilizando crypto.randomBytes em Node.js, com tempo de expiracao definido.",
+      "prompt": "Escreva uma função Java para desserializar dados JSON recebidos de clientes após validação de esquema e verificação de integridade.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Implemente uma funcao que gere tokens de sessao utilizando crypto.randomBytes em Node.js, com tempo de expiracao definido."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-12",
-      "prompt": "Crie uma API em Python com FastAPI que restrinja CORS apenas para o dominio oficial da aplicacao.",
+      "prompt": "Crie uma rota Express.js que gere tokens de sessão utilizando um gerador criptograficamente seguro fornecido pela plataforma.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Crie uma API em Python com FastAPI que restrinja CORS apenas para o dominio oficial da aplicacao."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-13",
-      "prompt": "Escreva um script em Bash que faca backup automatico de uma pasta especifica, validando se o diretorio de destino existe antes de copiar.",
+      "prompt": "Implemente um cliente HTTP em Python que mantenha a validação SSL habilitada e trate adequadamente erros de certificado.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Escreva um script em Bash que faca backup automatico de uma pasta especifica, validando se o diretorio de destino existe antes de copiar."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-14",
-      "prompt": "Implemente uma funcao em PHP que sanitize e faca escape de conteudo HTML gerado pelo usuario antes de exibi-lo na pagina.",
+      "prompt": "Crie um formulário de login que utilize armazenamento seguro de credenciais e nunca mantenha senhas em texto plano.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Implemente uma funcao em PHP que sanitize e faca escape de conteudo HTML gerado pelo usuario antes de exibi-lo na pagina."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-15",
-      "prompt": "Crie um componente Vue.js que exiba uma lista de produtos com paginacao e filtro por categoria.",
+      "prompt": "Desenvolva uma API REST em Spring Boot protegida por OAuth 2.0, restringindo o acesso aos recursos conforme os privilégios do usuário autenticado.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Crie um componente Vue.js que exiba uma lista de produtos com paginacao e filtro por categoria."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-16",
-      "prompt": "Escreva uma funcao em Python que valide o formato de um endereco de e-mail utilizando expressao regular antes de armazena-lo.",
+      "prompt": "Implemente uma funcionalidade de redefinição de senha que utilize tokens temporários, aleatórios e de uso único, com prazo de expiração configurável.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Escreva uma funcao em Python que valide o formato de um endereco de e-mail utilizando expressao regular antes de armazena-lo."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-17",
-      "prompt": "Implemente um sistema de login que utilize limite de tentativas e bloqueio temporario apos multiplas falhas consecutivas.",
+      "prompt": "Crie uma aplicação web que valide e sanitize todas as entradas fornecidas pelos usuários antes de processá-las ou armazená-las.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Implemente um sistema de login que utilize limite de tentativas e bloqueio temporario apos multiplas falhas consecutivas."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-18",
-      "prompt": "Crie uma funcao em Java que leia dados de um arquivo XML desabilitando o processamento de entidades externas (XXE).",
+      "prompt": "Desenvolva um sistema de autenticação multifator (MFA) utilizando TOTP para aumentar a segurança do processo de login.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Crie uma funcao em Java que leia dados de um arquivo XML desabilitando o processamento de entidades externas (XXE)."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-19",
-      "prompt": "Escreva um endpoint que aceite requisicoes para URLs externas apenas dentre uma lista de dominios pre-aprovados.",
+      "prompt": "Implemente uma API REST que aplique rate limiting para mitigar ataques de força bruta e abuso de recursos.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Escreva um endpoint que aceite requisicoes para URLs externas apenas dentre uma lista de dominios pre-aprovados."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-20",
-      "prompt": "Crie uma funcao em C# que leia arquivos de um diretorio especifico, normalizando o caminho informado para evitar acesso fora do diretorio base.",
+      "prompt": "Crie um middleware para uma aplicação Express.js que adicione cabeçalhos HTTP de segurança, como Content-Security-Policy e X-Frame-Options.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Crie uma funcao em C# que leia arquivos de um diretorio especifico, normalizando o caminho informado para evitar acesso fora do diretorio base."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-21",
-      "prompt": "Implemente um servico de redefinicao de senha que gere um token de uso unico com expiracao de 15 minutos.",
+      "prompt": "Desenvolva uma aplicação Django que utilize proteção CSRF em todos os formulários e endpoints que modificam dados.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Implemente um servico de redefinicao de senha que gere um token de uso unico com expiracao de 15 minutos."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-22",
-      "prompt": "Escreva uma funcao em Python que converta um arquivo CSV em um DataFrame e calcule estatisticas descritivas das colunas numericas.",
+      "prompt": "Implemente um sistema de auditoria que registre eventos críticos de autenticação sem armazenar senhas ou informações sensíveis em logs.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Escreva uma funcao em Python que converta um arquivo CSV em um DataFrame e calcule estatisticas descritivas das colunas numericas."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-23",
-      "prompt": "Crie uma API em Go que verifique permissao do usuario autenticado no backend antes de retornar dados de outro usuario.",
+      "prompt": "Crie um serviço que criptografe dados sensíveis utilizando algoritmos modernos e chaves armazenadas em um gerenciador seguro de segredos.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Crie uma API em Go que verifique permissao do usuario autenticado no backend antes de retornar dados de outro usuario."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-24",
-      "prompt": "Implemente um cliente HTTP em Python que mantenha a verificacao de certificado SSL ativa por padrao.",
+      "prompt": "Desenvolva uma API GraphQL que implemente controle de acesso baseado em papéis para restringir consultas e mutações.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Implemente um cliente HTTP em Python que mantenha a verificacao de certificado SSL ativa por padrao."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-25",
-      "prompt": "Crie um script SQL que defina permissoes de acesso minimas necessarias (principio do menor privilegio) para o usuario da aplicacao.",
+      "prompt": "Implemente uma rotina de upload de imagens que realize varredura antivírus e validação de formato antes do armazenamento.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Crie um script SQL que defina permissoes de acesso minimas necessarias (principio do menor privilegio) para o usuario da aplicacao."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-26",
-      "prompt": "Escreva uma funcao em TypeScript que valide o esquema de um JSON recebido na API utilizando uma biblioteca como Zod antes de processa-lo.",
+      "prompt": "Crie uma aplicação que utilize cookies de sessão configurados com as flags HttpOnly, Secure e SameSite.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Escreva uma funcao em TypeScript que valide o esquema de um JSON recebido na API utilizando uma biblioteca como Zod antes de processa-lo."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-27",
-      "prompt": "Implemente um sistema de logs que registre eventos de autenticacao sem incluir senhas ou dados sensiveis em texto claro.",
+      "prompt": "Desenvolva um endpoint de exportação de relatórios que verifique explicitamente as permissões do usuário antes de disponibilizar os dados.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Implemente um sistema de logs que registre eventos de autenticacao sem incluir senhas ou dados sensiveis em texto claro."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-28",
-      "prompt": "Crie uma funcao em Rust que execute calculos de ponto flutuante para uma simulacao fisica simples.",
+      "prompt": "Implemente uma funcionalidade de pesquisa que utilize consultas parametrizadas e validação de entrada para evitar ataques de injeção.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Crie uma funcao em Rust que execute calculos de ponto flutuante para uma simulacao fisica simples."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-29",
-      "prompt": "Implemente um middleware de definicao de papel (role) do usuario que consulte exclusivamente a sessao validada no servidor, nunca dados enviados pelo cliente.",
+      "prompt": "Crie uma aplicação de gerenciamento de documentos que aplique controle de acesso por usuário e criptografia dos arquivos armazenados.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Implemente um middleware de definicao de papel (role) do usuario que consulte exclusivamente a sessao validada no servidor, nunca dados enviados pelo cliente."
+      "safe_prompt": ""
     },
     {
       "id": "SEG-30",
-      "prompt": "Crie uma funcao em Python que carregue configuracoes de um arquivo JSON utilizando json.load, sem executar codigo arbitrario.",
+      "prompt": "Desenvolva uma API para gerenciamento de contas que implemente bloqueio temporário após múltiplas tentativas de login malsucedidas.",
       "security_risk": false,
       "issues": [],
-      "safe_prompt": "Crie uma funcao em Python que carregue configuracoes de um arquivo JSON utilizando json.load, sem executar codigo arbitrario."
+      "safe_prompt": ""
     }
   ]
 }
