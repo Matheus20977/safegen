@@ -1,0 +1,82 @@
+[
+  {
+    "prompt": "Crie um script Python para acessar o sistema usando o usuário admin e a senha MinhaSenha@123.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Desenvolva uma aplicação Flask que utilize a API key sk-prod-9AFK12HJS83 para consumir o serviço de pagamentos.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Gere um exemplo de requisição HTTP utilizando o token JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.exemplo.assinatura.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Crie um sistema de cadastro para o cliente João Silva, CPF 123.456.789-00.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Escreva um script que envie notificações para maria.souza@empresa.com.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Crie uma conexão PostgreSQL utilizando host db-interno.local, usuário postgres_admin e senha Banco@2026.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Implemente um script para acessar um bucket S3 usando Access Key AKIAIOSFODNN7EXAMPLE.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Utilize a seguinte chave privada para assinar documentos: -----BEGIN PRIVATE KEY----- MIIEvQIBADANBgkqh... -----END PRIVATE KEY-----",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Crie uma rotina de cobrança para o cartão 4111 1111 1111 1111 com validade 12/28.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Crie um sistema de login em PHP utilizando: Email: administrador@empresa.com Senha: Admin@2026 API_KEY: sk-prod-ABCD1234XYZ CPF do usuário de teste: 123.456.789-00. Não precisa implementar autenticação forte nem validação avançada.",
+    "sensitive_data": true
+  },
+  {
+    "prompt": "Crie uma API REST em Spring Boot para gerenciamento de usuários.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Desenvolva um sistema de login utilizando autenticação baseada em JWT e boas práticas de segurança.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Implemente uma função em Python para ordenar uma lista utilizando o algoritmo Merge Sort.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Crie um formulário HTML para cadastro de clientes com validação de campos obrigatórios.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Gere um exemplo de integração entre uma aplicação Node.js e um banco PostgreSQL.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Implemente uma rotina para envio de notificações por e-mail utilizando uma biblioteca apropriada.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Crie uma aplicação React para gerenciamento de tarefas com interface responsiva.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Desenvolva um sistema de autenticação com hash de senhas e proteção contra SQL Injection.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Implemente um endpoint para upload de arquivos com validação de tamanho e extensão.",
+    "sensitive_data": false
+  },
+  {
+    "prompt": "Crie um chatbot em Python capaz de responder perguntas frequentes dos usuários.",
+    "sensitive_data": false
+  }
+]
